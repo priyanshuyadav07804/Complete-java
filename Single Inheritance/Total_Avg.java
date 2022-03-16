@@ -17,6 +17,7 @@ import java.util.*;
 class GFG {
 	public static void main (String[] args) {
         Result r = new Result();
+// 	r.setMarks(args);
         r.setMarks();
         r.compute();
         r.displayMarks();
@@ -29,6 +30,12 @@ class Marks{
     float javaMark;
     float cMark;
     float cppMark;
+//     public void setMarks(String [] args){
+// 	   id =  Integer.parseInt(args[0]);
+//         javaMark = Float.parseFloat(args[1]);
+//         cMark = float.parseFloat(args[2]);
+//         cppMark = Float.parseFloat(args[3]);
+//     }
     public void setMarks(){
         id =  sc.nextInt();
         javaMark = sc.nextFloat();
