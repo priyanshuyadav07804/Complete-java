@@ -24,6 +24,10 @@ class GFG {
 		
 		sb.reverse();
 		System.out.println(sb);  //revirsianumay
+        
+        StringBuilder sp2 = new StringBuilder("Hi! Good Morning.");
+        System.out.println(sb2.length());     // length
+        System.out.println(sb2.capacity());   // length+16
 		
 	}
 }
