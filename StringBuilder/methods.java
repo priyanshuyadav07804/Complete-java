@@ -28,6 +28,7 @@ class GFG {
         StringBuilder sp2 = new StringBuilder("Hi! Good Morning.");
         System.out.println(sb2.length());     // length
         System.out.println(sb2.capacity());   // length+16
+	System.out.println(sb.charAt(9));     // M
 		
 	}
 }
