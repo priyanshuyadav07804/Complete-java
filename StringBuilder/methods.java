@@ -1,3 +1,5 @@
+
+
 /*package whatever //do not write package name here */
 
 import java.io.*;
@@ -10,6 +12,9 @@ class GFG {
 		
 		sb.insert(5,"isholy");
 		System.out.println(sb);   //gangaisholyriver
+		
+		sb.delete(7,11);
+		System.out.println(sb);  //gangaisriver
         
         sb.replace(0,5,"yamuna");
 		System.out.println(sb);       //yamunaisriver
@@ -22,12 +27,8 @@ class GFG {
 		sb.delete(8,11);
 		System.out.println(sb);  //yamunaisriver
 		
-
-		
-		
-		
-
+		sb.reverse();
+		System.out.println(sb);  //revirsianumay
 		
 	}
-	
 }
