@@ -3,13 +3,13 @@
 import java.io.*;
 
 class Person{
-    private int age;          //data member private krne se access nhi hoga bahr
+    private int age;          //data member private krne se access nhi hoga bahr(other class)
     
-    private Person(int age){  //constructor private hone se kuch nhi hota h.
+    private Person(int age){  //private constructor -> cant access to other class
         this.age = age;
     }
     
-    private int getAge(){   //methods private karne se kuch nhi hota h
+    private int getAge(){   //private methods -> cant access to other class
         return age;
     }
     
@@ -20,7 +20,8 @@ class Person{
     public String toString(){           //used to give information about class 
         return "Person's age = "+age;
     }
-    
+}
+class Test{
 	public static void main (String[] args) {
         Person p = new Person(10);
         //System.out.println(p.age);    //cant access due to private field age
