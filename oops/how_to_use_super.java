@@ -26,3 +26,9 @@ public class Test{
         b.print();
     }
 }
+
+
+// o/p-> parant num = 10
+//       child num = 15
+//       This is parant method
+//       This is chuld method
