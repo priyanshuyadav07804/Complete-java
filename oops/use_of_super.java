@@ -15,16 +15,16 @@ compiler give error and say->"no default constructor found in parant class"
 
 
 class A{
-    public A(){
-        System.out.println("This is parant constuctor : ");
-    }
+//     public A(){
+//         System.out.println("This is parant constuctor : ");
+//     }
     public A(int x){
         System.out.println("parant is "+x);
     }
 }
 class B extends A{
     public B(){
-        // super(5); //we must write this if no default constructor is present in A
+        super(5);               //we must write this if no default constructor is present in A otherwise error will occure
         System.out.println("This is child constructor : ");
     }
 }
