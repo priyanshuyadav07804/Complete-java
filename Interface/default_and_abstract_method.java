@@ -4,6 +4,11 @@ interface Car{
     default void ApplyBreak(){            //default method
         System.out.println("Apply break for : "+ getName());
     }
+    
+    static void Info(Car c1){           //static method
+        System.out.println("this is "+c1.getName()+" car.");
+        // System.out.println("this is "+getName()+" car.");  error->a static method can't point to nonstatic method getName()
+    }
 }
 
 public class BMW implements Car{
@@ -16,8 +21,9 @@ public class BMW implements Car{
     }
     public static void main(String[] args){
         BMW b = new BMW("BMW");
-        System.out.println(b.getName());
+        System.out.println(b.getName());  //calling Interface's abstract method. 
         b.ApplyBreak();                  //calling Interface's default method. 
+        Car.Info(b);                     //calling Interface's static method.
     }
 }
 /*1st -> Interface me agr abstract method ka signature h then class me usko implemnent 
